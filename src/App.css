@@ -36,3 +36,104 @@
     transform: rotate(360deg);
   }
 }
+.banner-card{
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 80vh;
+  position: relative;
+  color: white;
+}
+.banner-img{
+  height: 80vh;
+  width: 100%;
+}
+.banner-title{
+  position: absolute;
+  top: 60vh;
+  left: 3rem;
+}
+.banner-overview{
+  position: absolute;
+  top: 67vh;
+  left: 3rem;
+  height: 4rem;
+  overflow: hidden;
+  margin-right: 2rem;
+}
+.movies-list{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center;
+}
+.movie-img{
+  width: 20vw;
+  height:50vh
+}
+.movie-card{
+  width: 20vw;
+  margin: 1rem;
+  position: relative;
+  color: white;
+}
+.movie-title{
+  position: absolute;
+  top: 1rem;
+  left: 5px;
+}
+.btn-wrapper{
+  display: flex;
+  justify-content: center;
+
+}
+.movie-btn{
+  position: absolute;
+  bottom: 2rem;
+  
+}
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+.pagination-cont{
+  display: flex;
+  justify-content: center;
+}
+.favourites-genre{
+  padding: 3rem;
+}
+.favourite-table{
+  padding: 3rem;
+  overflow: auto;
+}
+
+
+/* media query aplly karni ha mobile view ka liya*/
+@media screen and (max-width:600px) {
+  .banner-card{
+    height:50vh ;
+  }
+  .banner-img{
+    height:50vh ;
+  }
+  .banner-title{
+    top: 30vh;
+    left: 5vw;
+  }
+  .banner-overview{
+    top:37vh ;
+    left: 5vw;
+  }
+  .movie-card{
+    width: 40vw;
+    margin: 0.1rem;
+  }
+  .movie-img{
+    width: 40vw;
+  }
+  .movie-btn{
+    width: 80%;
+    font-size: 11px;
+    bottom:1rem ;
+  }
+  
+}
